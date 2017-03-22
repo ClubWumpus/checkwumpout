@@ -11,7 +11,7 @@
     <meta property="og:image" name="Image" content="https://i.imgur.com/63thuqc.png"/>
     <meta property="og:url" name="URL" content="https://clubwumpusteam.github.io/checkwumpout/"/>
 	<title>Check Wump Out Channel</title>
-	
+
 
 	<link type="text/css" href="styleView.css" rel="stylesheet" />
 	<style>
@@ -43,8 +43,8 @@ var click = new Audio("bgm/click2.mp3");
 function playSound() {
 hover.volume = 0;
     document.getElementById("fade").setAttribute("id", "fadeout");
-        $('.creation').addClass('buttonfadein').removeClass("creation"); 
-        $('.creation2').addClass('buttonfadein').removeClass("creation2"); 
+        $('.creation').addClass('buttonfadein').removeClass("creation");
+        $('.creation2').addClass('buttonfadein').removeClass("creation2");
 	    document.getElementById("backbutton").setAttribute("id", "backbuttonStatic");
 	document.getElementById('bgm').pause()
 snd.play();
@@ -67,13 +67,13 @@ playSound();
 	setTimeout(function(){
   document.getElementById("loader").style.display = "block";
 	document.getElementById('loadingMusic').play();
-    window.location.href = './index.html';
+    window.location.href = '.';
 	}, 1200);
 };
 
 function partymode() {
-        $('.creation').addClass('creation2').removeClass("creation"); 
-        $('.menu').addClass('menu2').removeClass("menu"); 
+        $('.creation').addClass('creation2').removeClass("creation");
+        $('.menu').addClass('menu2').removeClass("menu");
 }
 
 function showcase(name, link, auth) {
@@ -90,7 +90,7 @@ click.play();
 <div id="creations">
 	<a href="#" class="creation" onclick="showcase('WE LIVE NOW, FAM', 'http://i.imgur.com/0axdiFX.png', 'Wump Ent. Studios');" onmouseover="hover.play();" style="background-image: url(http://i.imgur.com/0axdiFX.png);"> </a>
 	<a href="#" class="creation" onclick="showcase('Check Wump Out Channel Logo', 'https://i.imgur.com/63thuqc.png', 'Super');" onmouseover="hover.play();" style="background-image: url(https://i.imgur.com/63thuqc.png);"> </a>
-	
+
 	</div>
 			<div id="backbutton">
 	<a class="backbutton" id="backbutton" href="#" onclick="backClick();" onmouseover="hover.play();"> </a>
