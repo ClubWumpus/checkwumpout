@@ -68,7 +68,7 @@ preload([
   document.getElementById("loader").style.display = "block";
 	document.getElementById('loadingMusic').play()
     timer = setTimeout(showPage, 1200);
-		localStorage.setItem("firstload", "1");	
+		localStorage.setItem("firstload", "1");
 }
 
 function loadPage() {
@@ -95,7 +95,7 @@ playSound();
 	setTimeout(function(){
   document.getElementById("loader").style.display = "block";
 	document.getElementById('loadingMusic').play();
-    window.location.href = './send.html';
+    window.location.href = 'send';
 	}, 1200);
 };
 
@@ -104,7 +104,7 @@ playSound();
 	setTimeout(function(){
   document.getElementById("loader").style.display = "block";
 	document.getElementById('loadingMusic').play();
-    window.location.href = './view.html';
+    window.location.href = 'view';
 	}, 1200);
 };
 
